@@ -468,8 +468,9 @@ line-height: 1.3em;
 } */
 
 .goog-button-base-checked .goog-button-base-content {
-    color: rgba(0, 0, 0, .6);
+    color: #fff;
     font-weight: bold;
+    background: rgba(0,121,107, .8);
 }
 
 /* .goog-button-base-checked .goog-menu-button-dropdown {
