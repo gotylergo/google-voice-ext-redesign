@@ -34,6 +34,8 @@ To install the extension, follow these steps:
 2. Open Chrome and head to chrome://extensions
 3. Enable the developer mode switch.
 4. Click "Load unpacked extension.
+5. Select the folder you unpacked before (this README.MD file will be inside it).
+6. Make sure you're signed into Google, and click the Google Voice icon on the toolbar and you're in!
 
 Note: the code is all available here for review, and I don't receive your credentials or information. Just like the Official extension, you must sign into Google on the website to use this. No special app authorization is required, and I haven't changed any of the core functionality of the app, only the visual styles  (HTML, CSS, and the addition of [FontAwesome](https://fontawesome.com/) for icons).
 
@@ -51,8 +53,10 @@ For cementing in my web development skills.
 <a name="thedeveloper"></a>
 ## The Developer
 
-My name's Tyler and I'm a web development student at Thinkful. Nice to meet you!
+**My name's Tyler and I'm a web development student at Thinkful. Nice to meet you!**
 
-Find me on GitHub: [gotylergo](https://github.com/gotylergo)
-LinkedIn: [https://www.linkedin.com/in/tylerjustyn/](https://www.linkedin.com/in/tylerjustyn/)
-(Tyler Justyn Official)[https://www.tylerjustyn.com]
+### Find me on
+
+- GitHub: [gotylergo](https://github.com/gotylergo)
+- LinkedIn: [tylerjustyn](https://www.linkedin.com/in/tylerjustyn/)
+- Music: [tylerjustyn.com](https://www.tylerjustyn.com)
