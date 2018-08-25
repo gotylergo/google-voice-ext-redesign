@@ -1,0 +1,348 @@
+/* Tabs */
+
+.goog-button-base-top-shadow {
+    display: none;
+}
+
+#gc-quickcall,
+#gc-quicksms {
+    margin-top: 30px;
+}
+
+/* .gc-tabs > div > div > div > div > div {
+  margin: 0 3px;
+  padding: 0 8px;
+  min-width: 32px;
+  height: 30px;
+  font-size: 12px;
+  line-height: 30px;
+} */
+
+/* Call tab */
+
+.gc-quickcall-contents {
+    text-align: center;
+}
+
+/* Material buttons */
+
+.goog-button-base-content {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 3px;
+    border: none;
+    border-radius: 2px;
+    padding: 0 8px;
+    min-width: 32px;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #99BB00;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    width: 100%;
+}
+
+.goog-button-base-content:hover,
+.goog-button-base-content:focus {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.goog-button-base-content:active {
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.goog-button-base-content:disabled {
+    color: rgba(0, 0, 0, 0.38);
+    background-color: rgba(0, 0, 0, 0.12);
+    box-shadow: none;
+    cursor: initial;
+}
+
+.goog-button-base-content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: currentColor;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.goog-button-base-content:hover::before {
+    opacity: 0.12;
+}
+
+.goog-button-base-content:focus::before {
+    opacity: 0.2;
+}
+
+.goog-button-base-content:active::before {
+    opacity: 0.32;
+}
+
+.goog-button-base-content:disabled::before {
+    opacity: 0;
+}
+
+.goog-button-base-content::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 18px;
+    border-radius: 50%;
+    padding: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: currentColor;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 1s, transform 0.5s;
+}
+
+.goog-button-base-content:active::after {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0s;
+}
+
+.goog-button-base-content:disabled::after {
+    opacity: 0;
+}
+
+/* Material form */
+
+.form-element {
+    position: relative;
+    margin: 30px 0;
+}
+
+.form-element input,
+.form-element textarea {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+.form-element input:focus,
+.form-element textarea:focus {
+    outline: none;
+}
+
+/* LABEL ======================================= */
+
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+
+.form-element input:focus~label,
+.form-element input:valid~label,
+.form-element textarea:focus~label,
+.form-element textarea:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+
+.bar {
+    position: relative;
+    display: block;
+    width: 95%;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+/* active state */
+
+.form-element input:focus~.bar:before,
+.form-element input:focus~.bar:after,
+.form-element textarea:focus~.bar:before,
+.form-element textarea:focus~.bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+
+.form-element input:focus~.highlight,
+.form-element textarea:focus~.highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+/* SMS Tab */
+
+.gc-message-sms-from,
+.gc-message-sms-text {
+    /* font-size: 12px; */
+    border: none;
+    -webkit-border-radius: .8rem;
+    border-radius: .8rem;
+    margin: .16rem 0;
+    padding: .4rem .56rem;
+    
+    color:rgb(0, 0, 0);
+    display:inline;
+    font-family:Roboto, "Helvetica Neue", sans-serif;
+    letter-spacing:0.14px;
+    line-height:20px;
+    text-size-adjust: 100%;
+    white-space:pre-wrap;
+    width:auto;
+    word-wrap:break-word;
+    -webkit-box-direction:normal;
+    -webkit-font-smoothing:antialiased;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    color:rgb(0, 0, 0);
+    display:inline;
+    font-family:Roboto, "Helvetica Neue", sans-serif;
+    font-size:11px;
+    font-weight:400;
+    height:auto;
+    letter-spacing:0.14px;
+    line-height:20px;
+    text-size-adjust:100%;
+    white-space:pre-wrap;
+    width:auto;
+    word-wrap:break-word;
+    -webkit-box-direction:normal;
+    -webkit-font-smoothing:antialiased;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0)        
+
+}
+
+.gc-message-sms-from {
+    font-weight: bold;
+}
+
+.gc-message-sms-row {
+    /* line-height: 1.3em;
+  margin: 2px 0;
+  padding: 5px;
+  background-color: rgb(120, 144, 156);
+  border-radius: 5px; */
+    width: 90%;
+    background-color: #dcdcdc;
+}
+#gc-quicksms {
+    text-align: center;
+}
+
+.gc-message-portrait > img {
+    border-radius: 50%;
+}
+
+/* Footer */
+
+.gc-footer-r {
+    margin: 1em 0;
+    text-align: center;
+    width: 100%;
+    background: rgba(0,0,0,0.04);
+}
+.gc-footer-r div {
+    display: inline-block;
+    width: 5em;
+    margin: 0;
+}
+.gc-footer-r a {
+    font-size: 1.5em;
+    color: rgba(0,0,0,0.8);
+}
+
+.goog-button-base-content div {
+    float: left;
+}
