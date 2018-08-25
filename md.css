@@ -267,61 +267,55 @@ label {
 
 .gc-message-sms-from,
 .gc-message-sms-text {
-    /* font-size: 12px; */
     border: none;
-    -webkit-border-radius: .8rem;
-    border-radius: .8rem;
-    margin: .16rem 0;
-    padding: .4rem .56rem;
-    
-    color:rgb(0, 0, 0);
-    display:inline;
-    font-family:Roboto, "Helvetica Neue", sans-serif;
-    letter-spacing:0.14px;
-    line-height:20px;
+    line-height: 20px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.14px;
+    line-height: 20px;
     text-size-adjust: 100%;
-    white-space:pre-wrap;
-    width:auto;
-    word-wrap:break-word;
-    -webkit-box-direction:normal;
-    -webkit-font-smoothing:antialiased;
-    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
-    color:rgb(0, 0, 0);
-    display:inline;
-    font-family:Roboto, "Helvetica Neue", sans-serif;
-    font-size:11px;
-    font-weight:400;
-    height:auto;
-    letter-spacing:0.14px;
-    line-height:20px;
-    text-size-adjust:100%;
-    white-space:pre-wrap;
-    width:auto;
-    word-wrap:break-word;
-    -webkit-box-direction:normal;
-    -webkit-font-smoothing:antialiased;
-    -webkit-tap-highlight-color:rgba(0, 0, 0, 0)        
-
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    -webkit-box-direction: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .gc-message-sms-from {
+    display: none;
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: auto;
     font-weight: bold;
+    text-overflow: ellipsis;
+    width: 50px;
+    height: 13px;
 }
 
 .gc-message-sms-row {
-    /* line-height: 1.3em;
-  margin: 2px 0;
-  padding: 5px;
-  background-color: rgb(120, 144, 156);
-  border-radius: 5px; */
-    width: 90%;
+    line-height: 1.3em;
+    margin: 3px 0;
+    padding: 2px 10px;
+    /* background-color: rgb(120, 144, 156); */
+    border-radius: 10px;
+    display: block;
     background-color: #dcdcdc;
 }
+
+.gc-message-sms-text {
+    padding: 0;
+    text-indent: 50px;
+}
+
 #gc-quicksms {
     text-align: center;
 }
 
-.gc-message-portrait > img {
+.gc-message-portrait>img {
     border-radius: 50%;
 }
 
@@ -331,16 +325,31 @@ label {
     margin: 1em 0;
     text-align: center;
     width: 100%;
-    background: rgba(0,0,0,0.04);
+    background: rgba(0, 0, 0, 0.04);
 }
+
 .gc-footer-r div {
     display: inline-block;
     width: 5em;
     margin: 0;
 }
-.gc-footer-r a {
+
+.gc-footer-r a,
+.gc-footer-r a:visited,
+.gc-footer-r a:active {
     font-size: 1.5em;
-    color: rgba(0,0,0,0.8);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+a,
+a:visited,
+a:active {
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .goog-button-base-content div {

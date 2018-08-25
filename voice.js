@@ -1757,7 +1757,7 @@ gc.Popup.prototype.createSmsLine_ = function(type, contact, text) {
   return $dom('div', {'class': 'gc-message-sms-row'},
       $dom('span', {'class': 'gc-message-sms-from'},
           (type == 10 ? contact : 'Me') + ': '),
-      $dom('span', {'class': 'gc-message-sms-text'}, text));
+      $dom('p', {'class': 'gc-message-sms-text'}, text));
 };
 
 /**

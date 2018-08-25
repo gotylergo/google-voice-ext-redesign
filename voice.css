@@ -385,16 +385,16 @@ a.gc-message-action {
 }
 
 .gc-message-sms-row {
-    /* line-height: 1.3em;
+line-height: 1.3em;
   margin: 2px 0;
   padding: 5px;
   background-color: rgb(120, 144, 156);
-  border-radius: 5px; */
+  border-radius: 5px;
     background-color: #dcdcdc;
     border: none;
     -webkit-border-radius: .8rem;
     border-radius: .8rem;
-    /* display: inline-block; */
+    display: inline-block;
     margin: 0;
     /* max-width: 75%; */
     padding: .1rem .56rem;
@@ -422,11 +422,16 @@ a.gc-message-action {
 
 .gc-message-sms-more {
     text-decoration: underline;
-    color: #03b;
+    color: rgba(0,0,0,0.8);
     padding: 3px 0;
     cursor: pointer;
     font-size: 11px;
+    text-transform: uppercase;
     text-align: center;
+}
+
+.gc-message-sms-more:hover {
+    color: rgba(0,0,0,0.5);
 }
 
 /* GOOG Styles */
@@ -463,7 +468,8 @@ a.gc-message-action {
 } */
 
 .goog-button-base-checked .goog-button-base-content {
-    color: #000;
+    color: rgba(0, 0, 0, .6);
+    font-weight: bold;
 }
 
 /* .goog-button-base-checked .goog-menu-button-dropdown {
