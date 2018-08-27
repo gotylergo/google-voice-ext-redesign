@@ -268,7 +268,6 @@ label {
 .gc-message-sms-from,
 .gc-message-sms-text {
     border: none;
-    line-height: 20px;
     color: rgb(0, 0, 0);
     display: inline-block;
     font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -289,11 +288,11 @@ label {
     position: absolute;
     display: inline-block;
     white-space: nowrap;
-    overflow: auto;
+    overflow: hidden;
     font-weight: bold;
     text-overflow: ellipsis;
     width: 50px;
-    height: 15px;
+    height: 20px;
 }
 
 .gc-message-sms-row {
