@@ -53,10 +53,11 @@ For cementing in my web development skills.
 <a name="thedeveloper"></a>
 ## The Developer
 
-**My name's Tyler and I'm a web development student at Thinkful. Nice to meet you!**
+**My name's Tyler and I'm a Thinkful full stack web development graduate. Nice to meet you!**
 
 ### Find me on
 
+- Portfolio: [tylerjustyn.dev](https://tylerjustyn.dev)
 - GitHub: [gotylergo](https://github.com/gotylergo)
 - LinkedIn: [tylerjustyn](https://www.linkedin.com/in/tylerjustyn/)
 - Music: [tylerjustyn.com](https://www.tylerjustyn.com)
